@@ -37,7 +37,6 @@ export default function Mypendingdatasets() {
           headers: {
             Authorization:
               "Token " + JSON.parse(localStorage.getItem("user")).token,
-            g,
           },
         })
         .then((res) => {

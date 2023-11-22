@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ const convertDate = (date) => {
 
 // get the dataset information and display the information in table format
 export default function Eachtempdatasetinfo() {
-  let { id } = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
   const alert = useAlert();
   const [load, setLoad] = useState(false);
@@ -109,7 +109,7 @@ export default function Eachtempdatasetinfo() {
 
   useEffect(() => {
     axios
-      .get("api/tempdatasets/" + params.id, {
+      .get("api/tempdatasets/" + id, {
         headers: {
           Authorization:
             "Token " + JSON.parse(localStorage.getItem("user")).token,
@@ -122,7 +122,7 @@ export default function Eachtempdatasetinfo() {
       .catch((err) => {
         console.log("err", err);
       });
-  }, []);
+  }, [id]);
 
   //check if user is logged in or not from localstorage
   useEffect(() => {
@@ -251,3 +251,4 @@ export default function Eachtempdatasetinfo() {
     </>
   );
 }
+

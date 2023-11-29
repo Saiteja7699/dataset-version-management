@@ -59,8 +59,8 @@ const Navbar = () => {
           <a onClick={() => navigate(`/`)}>
             <IconButton>
               <Avatar
-                alt="IIITH"
-                src="https://d1hl0z0ja1o93t.cloudfront.net/wp-content/uploads/2017/04/21165916/logo2.png"
+                alt="Data_Foundation_Logo"
+                src="https://images.squarespace-cdn.com/content/v1/64e4e29725c04b3719d055ad/1692721851024-TQQ4RCABD66UNB4R5DW8/image-asset.png"
                 variant="square"
               />
             </IconButton>{" "}

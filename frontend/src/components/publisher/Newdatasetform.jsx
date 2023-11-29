@@ -18,7 +18,7 @@ const defaultValues = {
   name: "",
   description: "",
   source: "",
-  status: "R",
+  status: "A",
   reference: null,
   //publisher: JSON.parse(localStorage.getItem('user')).id,
 };

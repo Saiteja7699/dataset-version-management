@@ -43,6 +43,7 @@ class UserViewSet(ModelViewSet):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def User_register(request):
+    print(request)
     try:
         data = {}
         # if request.data.get('group') == 'admin':

@@ -18,9 +18,9 @@ services:
     volumes:
       - .:/my_app_dir
     environment:
-      AWS_ACCESS_KEY_ID: "AKIAY5FSVPQ7W4XZZNTI"
-      AWS_SECRET_ACCESS_KEY: "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"
-      AWS_STORAGE_BUCKET_NAME: "dfs-object-storage"
+      AWS_ACCESS_KEY_ID: "AKIASZASMGKR2Z7CN35L"
+      AWS_SECRET_ACCESS_KEY: "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"
+      AWS_STORAGE_BUCKET_NAME: "dataset-s3-bucket"
     ports:
       - "8000:8000"
     depends_on:
